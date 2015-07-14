@@ -1,0 +1,90 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="skrollr.js"></script>
+
+	<script>
+
+	</script>
+
+	<style>
+	body {
+
+		height: 2000px;
+	}
+		#phone {
+			width: 100%;
+			position: fixed;
+			height: 740px;
+			z-index:100;
+		}
+
+		#phone-c {
+
+			background: url('iphone.png') no-repeat;
+			width: 740px;
+			height: 740px;
+			position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+  			margin: 0 auto;
+  			transform: scale(0.5,0.5);
+		}
+
+		#screen-img {
+
+			z-index:1000;
+			position: fixed;
+			left: 0%;
+			
+		}
+
+		#screen-img img {
+			width: 100%;
+			margin: -105px auto;
+
+
+		}
+
+		#stove-img {
+
+			background: url('stove.jpg') no-repeat;
+			position: fixed;
+			height: 400px;	
+			width: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<div id="main-1">
+
+	<div data-0="transform:scale(1); opacity:1" data-200p="transform:scale(0.126972); opacity:1" data-202p="transform:scale(0.07); opacity:0" id="screen-img">
+	<img src="imgaa.jpg"></img>
+</div>
+
+
+<div data-205p="transform:rotate(90deg) translate(0,0px) scale(1)" data-500p="transform:rotate(0deg) translate(0,-200px) scale(0.5)" data-650p="transform:rotate(0deg) translate(0,-200px) scale(0.5)" data-750p="transform:rotate(0deg) translate(0,30px) scale(0.3)" id="phone">
+	<div id="phone-c"></div>
+
+</div>
+
+<div id="stove-img" data-500p="transform:rotate(0deg) translate(160px, 1000px) scale(0.7)" data-650p="transform:rotate(0deg) translate(160px, 230px) scale(0.7)"></div>
+
+
+</div>
+
+
+<script type="text/javascript">
+	skrollr.init({
+		constants: {
+			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
+			//adjust for shorter/longer pause
+			box: '150p'
+		}
+	});
+	</script>
+
+</body>
+</html>
