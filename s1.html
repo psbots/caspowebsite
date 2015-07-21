@@ -1,0 +1,294 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="skrollr.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+	<style>
+
+		body {
+
+			height: 2000px;
+			font-family: Open Sans;
+			margin: 0
+		}
+		#start_cover_phone {
+			width: 1764px;
+			height: 865px;
+			background: url('imgs/iphone0cover0photo.jpg') no-repeat;
+			position: fixed;
+			transform: translate(-15%, -10%) scale(1);
+			z-index:100;
+			filter: sepia(0.1);
+			
+
+		}
+
+		#cover0heading1 {
+			position: fixed;
+			z-index: 200;
+			text-align: right;
+			top: 40%;
+			right: 4%;
+			text-shadow: 1px 1px 1px #000;
+
+		}
+
+		#cover0heading1 h1 {
+						padding: 12px;
+			color: #fff;
+			font-weight: 500;
+			margin-bottom: -2px;
+
+		}
+
+		#cover0heading1 p {
+			padding: 8px;
+			margin-top:-10px;
+			color: #fff;
+			font-weight: 100
+
+		}
+
+		#cover0heading1 h6 {
+			
+			background: rgba(0, 140, 216, 0.87);
+			border-radius: 10px;
+			color: #fff;
+			padding: 10px;
+			width: 25%;
+			font-weight: 100;
+			margin: 0 auto;
+			font-size: 13px;
+			text-align: center;
+
+		}
+
+		#main0start {
+
+			background: #000;
+			width: 100%;
+			position: fixed;
+			height: 100%;
+			z-index: 103;
+			margin: 0;
+			padding: 0;
+			display: block
+		}
+
+		#cover-stove-img {
+			width: 1744px;
+			height: 706px;
+			position: fixed;
+			background: url("imgs/new_render.135.png") no-repeat;
+
+		}
+
+		#light-sweep {
+
+
+background: rgba(255,255,255,0);
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(39%, rgba(255,255,255,0.95)), color-stop(53%, rgba(255,255,255,0.92)), color-stop(70%, rgba(255,255,255,0.88)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+
+z-index: 10000;
+position: fixed;
+width: 100%;
+height: 100%;
+opacity: 0.7;
+
+		}
+
+
+		#main0contents {
+
+			width: 100%;
+			margin-top: 8140px;
+			height: 400px;
+			background: #000;
+		}
+
+		.full-div {
+
+			position: fixed;
+			z-index: 10000;
+			width: 100%;
+			height: 100%;
+		}
+
+		#cover-hide-white-full {
+
+			background: #309EFE;
+
+		}
+
+		#scene2-text-intro {
+
+			position: fixed;
+			z-index: 20000;
+			text-align: center;
+			top: 40%;
+			margin: 0 auto;
+			width: 100%;
+			color: #fff;
+			text-shadow:1px 1px 0px rgba(0,0,0,0.2)
+			
+					}
+
+					#scene2-text-intro h1 {
+						font-weight: 100
+
+					}
+		#scene-3 {
+
+			background: url("imgaa.jpg") no-repeat;
+			
+			background-size: cover;
+		}
+
+		.feature-display-text { 
+			position: fixed;
+			z-index: 20000;
+			top: 40%;
+			margin: 0 auto;
+			width: 35%;
+			color: #fff;
+			text-shadow: 1px 1px 1px #000;
+		}
+
+	
+
+		.feature-display-text h1 {
+
+			font-weight: 100
+		}
+
+		.feature-display-text p {
+
+			font-size: 13px;
+		}
+
+		.text-right {
+			text-align: right;
+			right: 12%;
+
+		}
+
+		.text-left {
+
+			text-align: left;
+		}
+
+		.text-center {
+
+			text-align: center;
+		}
+		.black-text-color {
+color: #000 !important;
+text-shadow:0 0 0 ;
+		}
+
+
+		#scene-4 {
+
+			background: rgba(255, 255, 255, 1) url("renders/new render.146.jpg") no-repeat scroll 0% 50% / 73% auto;
+			color: #000;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<div id="main0start" data-0="opacity:0.6" data-100p="opacity:0">
+</div>
+
+<div id="cover0heading1" data-0="top:40%; opacity:1" data-70p="top:40%; opacity:1" data-100p="top:50%; opacity:0">
+	<h1>Empowering the family makers</h1>
+	<p>Meet the Nest Learning Thermostat.</p>
+
+	<h6>Scroll for more</h6>
+
+</div>
+
+
+<div id="start_cover_phone" data-0="transform: translate(-15%, -10%) scale(1.2) rotate(0deg); width:1764px;" data-100p="transform: translate(-15%, -10%) scale(1) rotate(0deg); width:1764px;" data-250p="transform[swing]: translate(-15%, -10%) scale(0.1) rotate(90deg); width:1764px;" data-295p="transform[swing]: translate(-15%, -27%) scale(0.09) rotate(90deg); width:1764px" data-300p="transform[swing]: translate(-13%, -26.5%) scale(0.08) rotate(90deg); width[swing]:1572px" ></div>
+
+<div id="cover-stove-img" data-250p="transform: scale(0.5) translate(-29%, 170%);" data-300p="transform[swing]: scale(0.5) translate(-29%, 24%); "></div>
+
+
+<div id="scene2-text-intro" data-0="top:50%; opacity:0; transform: translate(0%,0%)" data-350p="top:40%; opacity:1; transform: translate(0%,0%)" data-325p="top:50%; opacity:0; transform: translate(0%,0%)" data-400p="top:40%; opacity:1; transform: translate(0%,0%)" data-420p="top:50%; opacity:0; transform: translate(0%,-100%)">
+	<h1>Gas producing Stovetop</h1>
+	<p>No more buying stored gas cylinders.
+Stovetop generates cooking gas on demand.</p>
+
+
+
+</div>
+
+
+<div id="cover-hide-white-full" class="full-div" data-0="opacity:0; transform: translate(0%,0%)" data-325p="opacity:0; transform: translate(0%,0%)" data-350p="opacity:0.98; transform: translate(0%,0%)" data-400p="opacity:0.98; transform: translate(0%,0%)" data-420p="opacity:0.98; transform: translate(0%,-100%)"></div>
+
+
+
+<div id="scene-3" class="full-div image-display"  data-400p="opacity:1; transform: translate(0%,100%); width:110%" data-420p="opacity:1; transform: translate(0%,0%);  width:110%" data-470p="opacity:1; transform: translate(0%,0%);  width:100%" data-500p="opacity:1; transform: translate(0%,-100%);  width:100%">
+		
+		<div class="text-right feature-display-text">
+			
+	<h1>Gas producing Stovetop</h1>
+	<p>No more buying stored gas cylinders.
+Stovetop generates cooking gas on demand.</p>
+
+		</div>
+
+
+</div>
+
+
+
+
+
+
+<div id="scene-4" class="full-div image-display"  data-470p="opacity:1; transform: translate(0%,100%); width:100%" data-500p="opacity:1; transform: translate(0%,0%);  width:100%" data-570p="opacity:1; transform: translate(0%,0%);  width:100%">
+		
+		<div class="text-right feature-display-text black-text-color" data-480p="top:50%; opacity:0" data-520p="top:30%; opacity:1">
+			
+	<h1>LPG hybrid</h1>
+	<p>Caspo has the unique feature of a Hybrid Burner which conveniently switches between LPG and “self-
+
+made” cooking gas as per demand. During normal usage, Caspo itself uses a perfect mixture of both kind 
+
+of gas. This helps in generating maximum cost saving based on your electricity and LPG rates. It is also 
+
+possible to cook with either of the gases independently.</p>
+
+		</div>
+
+
+</div>
+
+
+
+
+
+<div id="light-sweep"
+	data-0="transform: translate(-100%,0)" data-100p="transform: translate(-100%,0)" data-120p="transform: translate(100%,0)"  data-293p="transform: translate(-100%,0)" data-307p="transform: translate(100%,0)"></div>
+</body>
+
+<script type="text/javascript">
+	skrollr.init({
+		constants: {
+			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
+			//adjust for shorter/longer pause
+			box: '150p'
+		}
+	});
+	</script>
+</html>
