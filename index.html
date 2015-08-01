@@ -346,6 +346,24 @@ text-shadow:0 0 0 ;
 
 
 		}
+		
+		
+		#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 	</style>
@@ -354,6 +372,16 @@ text-shadow:0 0 0 ;
 
 </head>
 <body>
+<div id="loading">Loading&#8230;</div>
+<div id="page">
+
+
+
+
+
+
+
+
 
 	<div id="main0start" data-0="opacity:0.6" data-100p="opacity:0">
 </div>
@@ -555,6 +583,10 @@ Wellness wizard actively helps to improve the Caspo family health Index</p>
 
 <div id="light-sweep"
 	data-0="transform: translate(-100%,0)" data-100p="transform: translate(-100%,0)" data-120p="transform: translate(100%,0)"  data-293p="transform: translate(-100%,0)" data-307p="transform: translate(100%,0)"></div>
+	
+	
+	
+	</div><!--Page-->
 </body>
 
 <script type="text/javascript">
@@ -581,6 +613,33 @@ if(top!=0)
 
 }
 
+
+</script>
+
+
+
+
+
+<script rtpe="text/javascript">
+
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
 
 </script>
 
