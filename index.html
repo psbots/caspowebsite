@@ -3,15 +3,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="skrollr.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css' />
 	<style>
 
 		body {
 
 			height: 2000px;
-			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-			margin: 0
+			font-family: "Roboto",Helvetica,Arial,sans-serif;
+			margin: 0;
+			background-color: #f7f7f7 
 		}
 
 		#start_cover_phone {
@@ -143,13 +144,14 @@ opacity: 0.7;
 			top: 40%;
 			margin: 0 auto;
 			width: 100%;
-			color: #fff;
+			color: #000;
 			text-shadow:1px 1px 0px rgba(0,0,0,0.2)
 			
 					}
 
 					#scene2-text-intro h1 {
-						font-weight: 100
+						font-weight: 100;
+						font-size: 44px;
 
 					}
 		#scene-3 {
@@ -372,6 +374,8 @@ text-shadow:0 0 0 ;
 
 </head>
 <body>
+
+<div id="hiddenimg" style="display: none"><img src="imgs/iphone0cover0photo.jpg" /></div>
 <div id="loading">Loading&#8230;</div>
 <div id="page">
 
@@ -395,12 +399,12 @@ text-shadow:0 0 0 ;
 </div>
 
 
-<div id="start_cover_phone" data-0="transform: translate(-15%, -10%) scale(1.2) rotate(0deg); width:1764px;" data-100p="transform: translate(-15%, -10%) scale(1) rotate(0deg); width:1764px;" data-250p="transform[swing]: translate(-15%, -10%) scale(0.1) rotate(90deg); width:1764px;" data-295p="transform[swing]: translate(-15%, -27%) scale(0.09) rotate(90deg); width:1764px" data-300p="transform[swing]: translate(-13%, -26.5%) scale(0.08) rotate(90deg); width[swing]:1572px" ></div>
+<div id="start_cover_phone" data-0="transform: translate(-15%, -10%) scale(1.2) rotate(0deg); width:1764px;" data-100p="transform: translate(-15%, -10%) scale(1) rotate(0deg); width:1764px;" data-250p="transform[swing]: translate(-15%, -10%) scale(0.1) rotate(90deg); width:1764px;" data-295p="transform[swing]: translate(-15%, -27%) scale(0.08) rotate(90deg); width:1764px" data-300p="transform[swing]: translate(-13%, -15.0%) scale(0.05) rotate(90deg); width[swing]:1572px" ></div>
 
-<div id="cover-stove-img" data-250p="transform: scale(0.5) translate(-29%, 170%);" data-300p="transform[swing]: scale(0.5) translate(-29%, 24%); "></div>
+<div id="cover-stove-img" data-250p="transform: scale(0.4) translate(-23%, 170%);" data-300p="transform[swing]: scale(0.4) translate(-23%, 45%); "></div>
 
 
-<div id="scene2-text-intro" data-0="top:50%; opacity:0; transform: translate(0%,0%)" data-350p="top:40%; opacity:1; transform: translate(0%,0%)" data-325p="top:50%; opacity:0; transform: translate(0%,0%)" data-400p="top:40%; opacity:1; transform: translate(0%,0%)" data-420p="top:50%; opacity:0; transform: translate(0%,-100%)">
+<div id="scene2-text-intro" data-0="top:30%; opacity:0; transform: translate(0%,0%)" data-325p="top:10%; opacity:1; transform: translate(0%,0%)" data-300p="top:30%; opacity:0; transform: translate(0%,0%)" data-400p="top:10%; opacity:1; transform: translate(0%,0%)" data-420p="top:30%; opacity:0; transform: translate(0%,-100%)">
 	<h1>Gas producing Stovetop</h1>
 	<p>No more buying stored gas cylinders.
 Stovetop generates cooking gas on demand.</p>
@@ -409,9 +413,9 @@ Stovetop generates cooking gas on demand.</p>
 
 </div>
 
-
+<!--
 <div id="cover-hide-white-full" class="full-div" data-0="opacity:0; transform: translate(0%,0%)" data-325p="opacity:0; transform: translate(0%,0%)" data-350p="opacity:0.98; transform: translate(0%,0%)" data-400p="opacity:0.98; transform: translate(0%,0%)" data-420p="opacity:0.98; transform: translate(0%,-100%)"></div>
-
+-->
 
 
 <div id="scene-3-2" class="full-div image-display"  data-400p="opacity:1; transform: translate(0%,100%); width:100%" data-420p="opacity:1; transform: translate(0%,0%);  width:100%" data-470p="opacity:1; transform: translate(0%,0%);  width:100%" data-500p="opacity:1; transform: translate(0%,-100%);  width:100%">
@@ -598,6 +602,7 @@ Wellness wizard actively helps to improve the Caspo family health Index</p>
 	});
 	
 	
+	/*
 	window.onload = function() {
 	
 	var body = $("body, html");
@@ -612,16 +617,16 @@ if(top!=0)
 }
 
 }
-
+*/
 
 </script>
 
 
 
 
+<script type="text/javascript">
 
-<script rtpe="text/javascript">
-
+/*
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
     function checkReady() {
@@ -639,8 +644,31 @@ function show(id, value) {
 onReady(function () {
     show('page', true);
     show('loading', false);
+	
 });
+*/
 
+$( document ).ready(function() {
+    $("#page").css("display", "block");
+	$("#loading").css("display", "none");
+	
+	
+	
+	
+	
+	$('html, body').delay(1200).animate({
+    scrollTop: '+=6500'
+ }, 4000,
+	function() {
+	$(this).delay(1200).animate({
+    scrollTop: '+=2800'
+ }, 3000)
+	}
+ 
+ );
+ 
+ 
+  });
 </script>
 
 <script>
