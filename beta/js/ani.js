@@ -53,6 +53,8 @@ $(function(){
 $(window).load(function(){
 
 
+$(".loader").fadeOut("fast");
+
 		$('.img-slider').bxSlider({
   auto: true,
 hideControlOnEnd: true,
@@ -66,6 +68,7 @@ controls : false
 
  $(window).ready(function(){
 
+	$('body').addClass("fully-loaded")
 
  	$('#scene2').waypoint({
   handler: function(direction) {
@@ -88,10 +91,11 @@ controls : false
 	 $(this).one('mousewheel',function(event){
 	 	window.scrollTo(0,0);
 	 	  $('#start_cover_phone').css({
-	    "transform":"translate(-12%, -100%) scale(0.08) rotate(90deg)"
+	    "transform":"translate(0%, 0%) scale(0.08) rotate(90deg)"
 	  	}).delay(2000).queue(function (next) { 
   			  $(this).css({
-	    "transform":"translate(-26%, -91%) scale(0.08) rotate(90deg)"
+	    "transform":"translate(0%, 5%) scale(0.08) rotate(90deg)",
+		
 	  	}); 
 
   		startSceneAnimations();
