@@ -10,7 +10,7 @@ $('#start-stove-img').css({
 
 
 $('#headline-texts').css({
-	    "transform":"translateY(-600%)",
+	    "transform":"translateY(-850%)",
 	    "opacity" : 1
 	  	}); 
 
@@ -40,8 +40,49 @@ $(function(){
 				autoKill: true,
 				overwrite: 5							
 			});
-					
+		
+		
+		
+		
+		console.log($(window).scrollTop())
+	//When Browser reaches Top
+	if($(window).scrollTop()==0) {
+		
+		
+		$('#start-stove-img').css({
+	    "transform":"translateY(100%)"
+	  	}); 
+		
+		$('#start_cover_phone').css({
+	    "transform":"translate(-25%, 0%) scale(1.2) rotate(0deg)"
+	  	});
+		
+		$(".start-text").fadeIn("slow");
+		
+	}
+	
+	else {
+		
+		$(".start-text").fadeOut("fast");
+		
+		$('#start-stove-img').css({
+	    "transform":"translateY(0%)"
+	  	}); 
+		
+		$('#start_cover_phone').css({
+	    "transform":"translate(0%, 5%) scale(0.08) rotate(90deg)"
+	  	});
+		
+		
+	}
+		
+		
+		
+		
 	});
+	
+	
+	
 	
 });
 
@@ -113,6 +154,9 @@ controls : false
 
 	  //	startSceneAnimations();
 	});
+	
+	
+
 
 	
 
