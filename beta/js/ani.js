@@ -91,7 +91,7 @@ controls : false
 
 
 
-	 $("html, body").one('mousewheel',function(event){
+	 $("html, body").one('mousewheel DOMMouseScroll',function(event){
 	 	window.scrollTo(0,0);
 		//alert("css animations")
 		$(".start-text").fadeOut("fast");
