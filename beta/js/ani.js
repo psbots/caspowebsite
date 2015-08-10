@@ -49,25 +49,28 @@ $(function(){
 //Jquery Animations
 }
 
-
+/*
 $(window).load(function(){
 
 
-$(".loader").fadeOut("fast");
+
+
+
+});
+
+*/
+
+ $(document).ready(function(){
+
+ 
+	$(".loader").fadeOut("fast");
 
 		$('.img-slider').bxSlider({
   auto: true,
 hideControlOnEnd: true,
 controls : false
 });
-
-
-});
-
-
-
- $(window).ready(function(){
-
+ 
 	$('body').addClass("fully-loaded")
 
  	$('#scene2').waypoint({
@@ -88,8 +91,12 @@ controls : false
 
 
 
-	 $(this).one('mousewheel',function(event){
+	 $("html, body").one('mousewheel',function(event){
 	 	window.scrollTo(0,0);
+		//alert("css animations")
+		$(".start-text").fadeOut("fast");
+		
+		
 	 	  $('#start_cover_phone').css({
 	    "transform":"translate(0%, 0%) scale(0.08) rotate(90deg)"
 	  	}).delay(2000).queue(function (next) { 
@@ -98,6 +105,7 @@ controls : false
 		
 	  	}); 
 
+		
   		startSceneAnimations();
   			  
     //next(); 
