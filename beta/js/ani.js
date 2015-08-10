@@ -57,7 +57,7 @@ $(function(){
 	    "transform":"translate(-25%, 0%) scale(1.2) rotate(0deg)"
 	  	});
 		
-		$(".start-text").fadeIn("slow");
+		$(".start-text").delay(200).fadeIn("slow");
 		
 	}
 	
@@ -132,8 +132,9 @@ controls : false
 
 
 
-	 $("html, body").one('mousewheel DOMMouseScroll',function(event){
-	 	window.scrollTo(0,0);
+	 $("html, body").one('mousewheel DOMMouseScroll scroll',function(event){
+	 	//window.scrollTo(0,0);
+		$(this).scrollTop(100);
 		//alert("css animations")
 		$(".start-text").fadeOut("fast");
 		
