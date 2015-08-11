@@ -107,9 +107,9 @@ $(window).load(function(){
 	$(".loader").fadeOut("fast");
 
 		$('.img-slider').bxSlider({
-  auto: true,
-hideControlOnEnd: true,
-controls : false
+  	auto: true,
+	hideControlOnEnd: true,
+	controls : false
 });
  
 	$('body').addClass("fully-loaded")
@@ -128,7 +128,33 @@ controls : false
 
 });
 
+ 	var downKeyFlag = 0;
 
+ 	$(document).keydown(function(e){
+    if (e.keyCode == 40 && downKeyFlag == 0) { 
+
+    	downKeyFlag = 1;
+       $(this).scrollTop(100);
+		//alert("css animations")
+		$(".start-text").fadeOut("fast");
+		
+		
+	 	  $('#start_cover_phone').css({
+	    "transform":"translate(0%, 0%) scale(0.08) rotate(90deg)"
+	  	}).delay(2000).queue(function (next) { 
+  			  $(this).css({
+	    "transform":"translate(0%, 5%) scale(0.08) rotate(90deg)",
+		
+	  	}); 
+
+		
+  		startSceneAnimations();
+
+  		
+    });
+
+	  }
+});
 
 
 
