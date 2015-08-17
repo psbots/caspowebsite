@@ -33,7 +33,7 @@ var hheight = $('#scene2').height();
 
 function startSceneAnimations() {
 
-	var hheight = $('#scene2').height();
+	var hheight1 = $('#scene2').height();
 
 	var lastPosition = -100;
 
@@ -43,9 +43,17 @@ $('#start-stove-img').css({
 
 
 
-if(hheight < 850)
+if(hheight1 < 850)
 	$('#headline-texts').css({
-		    "transform":"translateY(-850%)",
+		    "transform":"translateY(-1250%)",
+		    "opacity" : 1
+		  	}); 
+
+
+else if(hheight1 <750)
+
+		$('#headline-texts').css({
+		    "transform":"translateY(-900%)",
 		    "opacity" : 1
 		  	}); 
 
