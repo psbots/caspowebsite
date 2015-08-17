@@ -120,7 +120,7 @@ $(function(){
 		else {
 
 			$('#start_cover_phone').css({
-		    "transform":"translate(0%, 0%) scale(1.6) rotate(0deg)"
+		    "transform":"translate(0%, 0%) scale(1.2) rotate(0deg)"
 		  	});
 
 		}
