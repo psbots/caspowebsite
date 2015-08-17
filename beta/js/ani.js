@@ -118,7 +118,7 @@ $(function(){
 		}
 
 
-		$(".start-text").delay(200).fadeIn("slow");
+		$(".start-text").fadeIn("slow");
 		
 	}
 	
