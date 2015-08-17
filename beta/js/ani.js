@@ -1,13 +1,17 @@
 //Disable Scrolling 
 
 
-
-
+var hheightGlobal = $('#scene2').height();
 function endPhoneAnimationPosition() {
 
 var hheight = $('#scene2').height();
 	
-	console.log(hheight);
+	//console.log(hheight);
+
+	var hdiff = hheight/650 * hheight/630 + 5 * hheight/650 ; 
+
+
+	console.log("hdiff ",hdiff);
 
 	if(hheight < 650)
 		$('#start_cover_phone').css({
@@ -15,25 +19,11 @@ var hheight = $('#scene2').height();
 			
 		});
 
-	else if(hheight >= 650 && hheight < 850) 
-
-		$('#start_cover_phone').css({
-		    "transform":"translate(0%, 7%) scale(0.08) rotate(90deg)",
-			
-		});
-
-	else if(hheight >= 850 && hheight < 950) 
-
-		$('#start_cover_phone').css({
-		    "transform":"translate(0%, 9%) scale(0.08) rotate(90deg)",
-			
-		});
-
 
 	else
 
 		$('#start_cover_phone').css({
-		    "transform":"translate(0%, 15%) scale(0.08) rotate(90deg)",
+		    "transform":"translate(0%, " + hdiff+"%) scale(0.08) rotate(90deg)",
 			
 		}); 
 
@@ -101,14 +91,33 @@ $(function(){
 		
 		downKeyFlag = 0;
 
+		hheightGlobal = $('#scene2').height();
+
 		$('#start-stove-img').css({
 	    "transform":"translateY(100%)"
 	  	}); 
 		
-		$('#start_cover_phone').css({
-	    "transform":"translate(-25%, 0%) scale(1.2) rotate(0deg)"
-	  	});
+		console.log("hgl",hheightGlobal);
 		
+		if(hheightGlobal < 600)
+		{
+
+
+			$('#start_cover_phone').css({
+		    "transform":"translate(-25%, 0%) scale(1.2) rotate(0deg)"
+		  	});
+
+		}
+
+		else {
+
+			$('#start_cover_phone').css({
+		    "transform":"translate(0%, 0%) scale(1.6) rotate(0deg)"
+		  	});
+
+		}
+
+
 		$(".start-text").delay(200).fadeIn("slow");
 		
 	}
@@ -152,6 +161,9 @@ $(window).load(function(){
 */
 
  $(window).load(function(){
+
+
+
 
  
 	$(".loader").fadeOut("fast");
