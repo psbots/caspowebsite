@@ -1,6 +1,49 @@
 //Disable Scrolling 
 
+
+
+
+function endPhoneAnimationPosition() {
+
+var hheight = $('#scene2').height();
+	
+	console.log(hheight);
+
+	if(hheight < 650)
+		$('#start_cover_phone').css({
+		    "transform":"translate(0%, 5%) scale(0.08) rotate(90deg)",
+			
+		});
+
+	else if(hheight >= 650 && hheight < 850) 
+
+		$('#start_cover_phone').css({
+		    "transform":"translate(0%, 7%) scale(0.08) rotate(90deg)",
+			
+		});
+
+	else if(hheight >= 850 && hheight < 950) 
+
+		$('#start_cover_phone').css({
+		    "transform":"translate(0%, 9%) scale(0.08) rotate(90deg)",
+			
+		});
+
+
+	else
+
+		$('#start_cover_phone').css({
+		    "transform":"translate(0%, 15%) scale(0.08) rotate(90deg)",
+			
+		}); 
+
+
+}
+
+
 function startSceneAnimations() {
+
+	var hheight = $('#scene2').height();
 
 	var lastPosition = -100;
 
@@ -9,8 +52,16 @@ $('#start-stove-img').css({
 	  	}); 
 
 
-$('#headline-texts').css({
-	    "transform":"translateY(-850%)",
+
+if(hheight < 850)
+	$('#headline-texts').css({
+		    "transform":"translateY(-850%)",
+		    "opacity" : 1
+		  	}); 
+
+else
+	$('#headline-texts').css({
+	    "transform":"translateY(-1450%)",
 	    "opacity" : 1
 	  	}); 
 
@@ -48,7 +99,8 @@ $(function(){
 	//When Browser reaches Top
 	if($(window).scrollTop()==0) {
 		
-		
+		downKeyFlag = 0;
+
 		$('#start-stove-img').css({
 	    "transform":"translateY(100%)"
 	  	}); 
@@ -69,9 +121,7 @@ $(function(){
 	    "transform":"translateY(0%)"
 	  	}); 
 		
-		$('#start_cover_phone').css({
-	    "transform":"translate(0%, 5%) scale(0.08) rotate(90deg)"
-	  	});
+		endPhoneAnimationPosition();
 		
 		
 	}
@@ -101,26 +151,26 @@ $(window).load(function(){
 
 */
 
- $(document).ready(function(){
+ $(window).load(function(){
 
  
 	$(".loader").fadeOut("fast");
 
 		$('.img-slider').bxSlider({
-  	auto: true,
-	hideControlOnEnd: true,
-	controls : false
-});
+			  	auto: true,
+				hideControlOnEnd: true,
+				controls : false
+	});
  
 	$('body').addClass("fully-loaded")
 
  	$('#scene2').waypoint({
   handler: function(direction) {
    
-   $('#s2SideText').css({
-	    "transform":"translate(0%,0%)",
-	    "opacity" : 1
-	  	}); 
+	   $('#s2SideText').css({
+		    "transform":"translate(0%,0%)",
+		    "opacity" : 1
+		  	}); 
 	},
 
 	offset: '18%'
@@ -142,11 +192,8 @@ $(window).load(function(){
 	 	  $('#start_cover_phone').css({
 	    "transform":"translate(0%, 0%) scale(0.08) rotate(90deg)"
 	  	}).delay(2000).queue(function (next) { 
-  			  $(this).css({
-	    "transform":"translate(0%, 5%) scale(0.08) rotate(90deg)",
-		
-	  	}); 
-
+  			  //add the function
+  			  endPhoneAnimationPosition();
 		
   		startSceneAnimations();
 
@@ -168,10 +215,9 @@ $(window).load(function(){
 	 	  $('#start_cover_phone').css({
 	    "transform":"translate(0%, 0%) scale(0.08) rotate(90deg)"
 	  	}).delay(2000).queue(function (next) { 
-  			  $(this).css({
-	    "transform":"translate(0%, 5%) scale(0.08) rotate(90deg)",
-		
-	  	}); 
+  			 
+
+  			 endPhoneAnimationPosition(); 
 
 		
   		startSceneAnimations();
