@@ -121,9 +121,16 @@ transform: translateY(-700%);
 	text-align:center;
 	font-size: 22px;
 	color:#fff;
-	padding-top:45vh;
+	padding-top:40vh;
 	font-weight:800;
 	text-shadow: 1px 1px 1px #000;
+}
+
+
+.start-text h1 {
+
+	font-size: 44px;
+	font-weight: 800;
 }
 
 .content-page {
@@ -212,7 +219,7 @@ height: 100%;
 }
 
 .bx-wrapper, .bx-viewport {
-    height: 750px !important; 
+    height: 650px !important; 
 }
 
 .left-c {
@@ -491,3 +498,11 @@ footer p {
 
 }
 
+
+@media all and ( min-width: 1000px ) {
+
+	#headline-texts {
+		top : -40%;
+	}
+
+}
