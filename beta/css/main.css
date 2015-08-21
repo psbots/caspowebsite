@@ -129,16 +129,28 @@ transform: translateY(-700%);
 
 .start-text h1 {
 
-	font-size: 44px;
-	font-weight: 800;
+	font-size: 48px;
+	font-weight: 600;
 }
+.start-text h3 {
+font-size: 20px;
+	font-weight: 200;
+
+}
+
+.start-text h2 {
+
+	font-weight: 200;
+
+}
+
 
 .content-page {
 
 	z-index:1000;
 	position: relative;
 	border-top: #228CEF 6px solid;
-	margin-top: 1800px;
+	margin-top: 1200px;
 	box-shadow: 1px 21px 75px #145693;
 	background: #fff
 }
@@ -157,6 +169,7 @@ transform: translateY(-700%);
 #scene3 {
 
 	background: #fff;
+	height: 800px
 }
 
 #scene3 h1 {
@@ -487,22 +500,120 @@ footer p {
 
 
 
+.product-div {
 
+	text-align: center;
+	padding: 10px;
+
+	border: thin solid #f0f0f0;
+	border-radius: 25px;	
+	width: 32%;
+	margin: 0 5px;
+}
+
+.product-div:hover  {
+
+	text-decoration: none
+}
+
+.product-div h1 {
+
+	font-weight: 100;
+
+}
+.product-div img {
+
+	width: 100%;
+	margin: 15px 0; 
+}
+
+
+.product-div ul {
+
+	list-style: none;
+	padding: 0
+}
+
+.product-div ul li {
+
+	margin-top: 20px;
+}
+
+
+.product-div button {
+
+	width: 50%;
+	margin: 20px 0;
+}
+
+
+		.start_cover_phone-start {
+		top : 4%;
+		transform: translate(0%, 0%) scale(1.5) rotate(0deg) !important;
+	}
 
 @media all and ( min-height: 700px ) {
 
 	#start_cover_phone {
 		top : 4%;
-		transform: translate(0%, 0%) scale(1.6) rotate(0deg);
+		transform: translate(-10%, 0%) scale(1.2) rotate(0deg);
+	}
+
+		.start_cover_phone-start {
+		top : 4%;
+		transform: translate(0%, 0%) scale(1.5) rotate(0deg);
 	}
 
 }
 
 
-@media all and ( min-width: 1000px ) {
+
+@media all and ( min-height: 1800px ) {
+
+	#start_cover_phone {
+		top : 4%;
+		transform: translate(0%, 0%) scale(1.5) rotate(0deg);
+	}
+
+	.start_cover_phone-start {
+		top : 4%;
+		transform: translate(0%, 0%) scale(1.5) rotate(0deg);
+	}
+
+}
+
+@media all and ( max-width: 1300px ) and ( min-width: 901px ) {
+.start_cover_phone-start {
+		top : 4%;
+		transform: translate(-20%, -15%) scale(1) rotate(0deg) !important;
+	}
+
+
+}
+
+
+@media all and ( min-width: 1300px ) {
 
 	#headline-texts {
-		top : -40%;
+		top : 40%;
 	}
+
+	.start_cover_phone-start {
+		top : 4%;
+		transform: translate(-10%, 0%) scale(1.2) rotate(0deg) !important;
+	}
+
+
+}
+
+@media all and ( max-width: 900px ) {
+
+
+
+	.start_cover_phone-start {
+		top : 4%;
+		transform: translate(-37%, -24%) scale(0.8) rotate(0deg) !important;
+	}
+
 
 }

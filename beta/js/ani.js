@@ -73,7 +73,7 @@ $(function(){
 	var $window = $(window);		//Window object
 	
 	var scrollTime = 0.4;			//Scroll time
-	var scrollDistance = 325;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+	var scrollDistance = 305;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
 	
 	$window.on("mousewheel DOMMouseScroll", function(event){
 		
@@ -106,6 +106,10 @@ $(function(){
 	  	}); 
 		
 		console.log("hgl",hheightGlobal);
+
+		$('#start_cover_phone').addClass("start_cover_phone-start");
+
+		/*
 		
 		if(hheightGlobal < 600)
 		{
@@ -125,6 +129,8 @@ $(function(){
 
 		}
 
+		*/
+
 
 		$(".start-text").fadeIn("slow");
 		
@@ -138,7 +144,9 @@ $(function(){
 	    "transform":"translateY(0%)"
 	  	}); 
 		
-		endPhoneAnimationPosition();
+		$('#start_cover_phone').removeClass("start_cover_phone-start")
+
+		//endPhoneAnimationPosition();
 		
 		
 	}
