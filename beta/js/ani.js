@@ -179,7 +179,7 @@ $(window).load(function(){
  $(window).load(function(){
 
 
-
+ 	$("html, body").scrollTop(0);
 
  
 	$(".loader").fadeOut("fast");
