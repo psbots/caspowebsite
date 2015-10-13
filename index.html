@@ -1,684 +1,251 @@
 <html>
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="skrollr.js"></script>
-
-
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css' />
-	<style>
-
-		body {
-
-			height: 2000px;
-			font-family: "Roboto",Helvetica,Arial,sans-serif;
-			margin: 0;
-			background-color: #f7f7f7 
-		}
-
-		#start_cover_phone {
-			width: 1764px;
-			height: 865px;
-			background: url('imgs/iphone0cover0photo.jpg') no-repeat;
-			position: fixed;
-			transform: translate(-15%, -10%) scale(1);
-			z-index:100;
-			filter: sepia(0.1);
-			
-
-		}
-
-		#cover0heading1 {
-			position: fixed;
-			z-index: 200;
-			text-align: right;
-			top: 40%;
-			right: 4%;
-			text-shadow: 1px 1px 1px #000;
-
-		}
-
-		#cover0heading1 h1 {
-						padding: 12px;
-			color: #fff;
-			font-weight: 500;
-			margin-bottom: -2px;
-
-		}
-
-			a{
-
-			text-decoration: none !important;
-			display:inline-block;
-		}
-
-		#cover0heading1 p {
-			padding: 8px;
-			margin-top:-10px;
-			color: #fff;
-			font-weight: 100
-
-		}
-
-		#cover0heading1 h6 {
-			
-			background: rgba(0, 140, 216, 0.87);
-			border-radius: 10px;
-			color: #fff;
-			padding: 10px;
-			width: 25%;
-			font-weight: 100;
-			margin: 0 auto;
-			font-size: 13px;
-			text-align: center;
-
-		}
-
-		#main0start {
-
-			background: #000;
-			width: 100%;
-			position: fixed;
-			height: 100%;
-			z-index: 103;
-			margin: 0;
-			padding: 0;
-			display: block
-		}
-
-		#cover-stove-img {
-			width: 1744px;
-			height: 706px;
-			position: fixed;
-			background: url("imgs/new_render.135.png") no-repeat;
-
-		}
-
-		#light-sweep {
-
-
-background: rgba(255,255,255,0);
-background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(39%, rgba(255,255,255,0.95)), color-stop(53%, rgba(255,255,255,0.92)), color-stop(70%, rgba(255,255,255,0.88)), color-stop(100%, rgba(255,255,255,0)));
-background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
-background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
-background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
-background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 39%, rgba(255,255,255,0.92) 53%, rgba(255,255,255,0.88) 70%, rgba(255,255,255,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
-
-z-index: 10000;
-position: fixed;
-width: 100%;
-height: 100%;
-opacity: 0.7;
-
-		}
-
-
-		#main0contents {
-
-			width: 100%;
-			margin-top: 8140px;
-			height: 400px;
-			background: #000;
-		}
-
-		.full-div {
-
-			position: fixed;
-			z-index: 10000;
-			width: 100%;
-			height: 100%;
-		}
-
-		#cover-hide-white-full {
-
-			background: #309EFE;
-
-		}
-
-		#scene2-text-intro {
-
-			position: fixed;
-			z-index: 20000;
-			text-align: center;
-			top: 40%;
-			margin: 0 auto;
-			width: 100%;
-			color: #000;
-			text-shadow:1px 1px 0px rgba(0,0,0,0.2)
-			
-					}
-
-					#scene2-text-intro h1 {
-						font-weight: 100;
-						font-size: 44px;
-
-					}
-		#scene-3 {
-
-			background: url("imgs/4X0A7840.jpg") no-repeat;
-			
-			background-size: cover;
-		}
-
-
-				#scene-3-2 {
-
-			background: url("renders/Final.150.jpg") no-repeat;
-			
-			background-size: cover;
-		}
-
-
-
-		.feature-display-text { 
-			position: fixed;
-			z-index: 20000;
-			top: 40%;
-			margin: 0 auto;
-			width: 35%;
-			color: #fff;
-			text-shadow: 1px 1px 1px #000;
-		}
-
-		.feature-display-text h1 {
-
-			font-weight: 100
-		}
-
-		.feature-display-text p {
-
-			font-size: 13px;
-		}
-
-		.text-right {
-			text-align: right;
-			right: 12%;
-
-		}
-
-		.text-left {
-
-			text-align: left;
-			left:12%;
-		}
-
-		.text-center {
-
-			text-align: center;
-			width: 100%;
-		}
-		.black-text-color {
-color: #000 !important;
-text-shadow:0 0 0 ;
-		}
-
-
-		#scene-6 {
-
-			background: rgba(255, 255, 255, 1) url("renders/new render.146.jpg") no-repeat scroll 0% 50% / 73% auto;
-			color: #000;
-		}
-
-		.full-black {
-
-			background: #000;
-			width: 100%;
-			height: 100%;
-			display: block;
-			opacity: 0.5
-
-		}
-
-				#scene-5 {
-
-			background: url("imgs/4X0A7620.jpg") no-repeat;
-			
-			background-size: cover;
-		}
-
-		#scene-4 {
-
-			background: rgba(0, 0, 0, 1) url("renders/new-render.13911.jpg") no-repeat scroll 100% 50% / 35% auto;
-			color: #000;
-		}
-
-		#scene-7 {
-
-			background: url("imgs/4X0A7786.jpg") no-repeat;
-			
-			background-size: cover;
-
-
-		}
-
-		#end-scene-types {
-
-			width: 100%;
-			height: 60%;
-			background: #EDEDED;
-			float: left;
-			padding-top: 10px
-		}
-
-
-
-		#end-scene-types h1 {
-
-			font-weight: 100;
-			font-size: 24px;
-			text-align: center;	
-		}
-
-		#end-scene-types #more-product {
-			width: 80%;
-			margin: 0 auto;
-			height: 300px;
-
-		}
-
-		#end-scene-types #more-product .mproduct-info-box {
-
-			float: left;
-			width: 225px;
-			height: 225px;
-			margin-right: 5%;
-			margin:0 60px;
-		}
-
-		#end-scene-types #more-product .mproduct-info-box .info {
-
-			height: 225px;
-			background-color: #fff;
-			border-radius: 5px;
-			box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1); 
-		}
-
-		#end-scene-pre-order {
-			width: 100%;
-			height: 25%;
-			background: #000; 
-			text-align: center;
-			padding-top: 37px;
-			color: #fff;
-			float: left;
-
-		}
-
-		#end-scene-pre-order h1 {
-
-			font-weight: 100;
-			font-size: 27px;
-
-		}
-
-		#end-scene-pre-order .button-order {
-				
-				padding: 5px;
-				border-radius: 18px;
-				border: solid 1px;
-				width: 292px;
-				font-size: 13px;
-				margin: 0 auto;
-				color: rgba(255, 255, 255, 0.8)
-
-		}
-
-		#end-scene-pre-order .button-order:hover {
-
-			background: #fff;
-			color: #000;
-		}
-
-		footer {
-			width: 100%;
-			height: 15%;
-			background: #fff;
-			float: left;
-		}
-
-		.footer-left-links {
-
-			padding: 15px;
-			width: 40%;
-			font-size: 12px;
-		}
-
-		.footer-left-links a {
-
-
-		}
-		
-		
-		#page {
-    display: none;
-}
-#loading {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(192, 192, 192, 0.5);
-    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-	</style>
+	<script src="js/jquery-1.11.3.min.js"></script>
 	
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/nicescroll.js"></script>
+	<script type="text/javascript" src="js/mordernizr.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/ani.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<link href="css/bootstrap.min.css"  rel='stylesheet' type='text/css' />
+	<link href="css/main.css"  rel='stylesheet' type='text/css' />
+	<link href="css/jquery.bxslider.css"  rel='stylesheet' type='text/css' />
 
-
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<div id="hiddenimg" style="display: none"><img src="imgs/iphone0cover0photo.jpg" /></div>
-<div id="loading">Loading&#8230;</div>
-<div id="page">
-
-
-
-
-
-
-
-
-
-	<div id="main0start" data-0="opacity:0.6" data-100p="opacity:0">
+<div class="loader">
+	Our Chefs are cooking the website deliciously for you. :) </br> Please Wait.  
 </div>
 
-<div id="cover0heading1" data-0="top:40%; opacity:1" data-70p="top:40%; opacity:1" data-100p="top:50%; opacity:0">
-	<h1>Empowering the homemaker</h1>
-	<p>Meet the Caspo Cooktop.</p>
-
-	<h6>Scroll for more</h6>
+<div class="start-text">
+	<h1>Caspo</h1>
+	<h3>Empowering Homemaker.</h3>
+	<h2>The Smart Gas Producing Stovetop</h2>
 
 </div>
 
 
-<div id="start_cover_phone" data-0="transform: translate(-15%, -10%) scale(1.2) rotate(0deg); width:1764px;" data-100p="transform: translate(-15%, -10%) scale(1) rotate(0deg); width:1764px;" data-250p="transform[swing]: translate(-15%, -10%) scale(0.1) rotate(90deg); width:1764px;" data-295p="transform[swing]: translate(-15%, -27%) scale(0.08) rotate(90deg); width:1764px" data-300p="transform[swing]: translate(-13%, -15.0%) scale(0.05) rotate(90deg); width[swing]:1572px" ></div>
-
-<div id="cover-stove-img" data-250p="transform: scale(0.4) translate(-23%, 170%);" data-300p="transform[swing]: scale(0.4) translate(-23%, 45%); "></div>
-
-
-<div id="scene2-text-intro" data-0="top:30%; opacity:0; transform: translate(0%,0%)" data-325p="top:10%; opacity:1; transform: translate(0%,0%)" data-300p="top:30%; opacity:0; transform: translate(0%,0%)" data-400p="top:10%; opacity:1; transform: translate(0%,0%)" data-420p="top:30%; opacity:0; transform: translate(0%,-100%)">
-	<h1>Gas producing Stovetop</h1>
-	<p>No more buying stored gas cylinders.
-Stovetop generates cooking gas on demand.</p>
-
-
-
-</div>
-
-<!--
-<div id="cover-hide-white-full" class="full-div" data-0="opacity:0; transform: translate(0%,0%)" data-325p="opacity:0; transform: translate(0%,0%)" data-350p="opacity:0.98; transform: translate(0%,0%)" data-400p="opacity:0.98; transform: translate(0%,0%)" data-420p="opacity:0.98; transform: translate(0%,-100%)"></div>
--->
-
-
-<div id="scene-3-2" class="full-div image-display"  data-400p="opacity:1; transform: translate(0%,100%); width:100%" data-420p="opacity:1; transform: translate(0%,0%);  width:100%" data-470p="opacity:1; transform: translate(0%,0%);  width:100%" data-500p="opacity:1; transform: translate(0%,-100%);  width:100%">
-
-	<!--<div class="full-black" data-420p="opacity:0" data-450p="opacity:0.5"></div>-->
-		
-		<div class="text-center feature-display-text black-text-color" data-420p="top:50%; opacity:0" data-440p="top:30%; opacity:1">
+	<div class="fixed-startpage full-div" id="scene1">
+		<img id="start-stove-img" src="imgs/Final.150111.jpg"></img>
+			<div id="start_cover_phone"><img src="imgs/iphone0cover0photo.jpg"></img></div>
 			
-	<h1>Cooking gas on demand</h1>
-	<p>Using water and electricity, Caspo produces cooking gas as and when you want it, at a cost on par with
-LPG, and in some cases even lesser.</p>
-
-		</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div id="scene-4" class="full-div image-display"  data-470p="opacity:1; transform: translate(0%,100%); width:100%" data-500p="opacity:1; transform: translate(0%,0%);  width:100%" data-550p="opacity:1; transform: translate(0%,0%);  width:100%" data-600p="opacity:1; transform: translate(0%,-100%);  width:100%">
-		
-		<div class="text-left feature-display-text white-text-color" data-480p="top:50%; opacity:0" data-520p="top:30%; opacity:1">
-			
-	<h1>LPG hybrid</h1>
-	<p>Caspo has the unique feature of a Hybrid Burner which conveniently switches between LPG and self-produced cooking gas as per demand. During normal usage, Caspo itself uses a perfect mixture of both kind 
-
-of gas. This helps in generating maximum cost saving based on your electricity and LPG rates. It is also 
-
-possible to cook with either of the gases independently.</p>
-
-		</div>
-
-
-</div>
-
-
-
-
-<div id="scene-5" class="full-div image-display"  data-550p="opacity:1; transform: translate(0%,100%); width:100%" data-600p="opacity:1; transform: translate(0%,0%);  width:100%" data-650p="opacity:1; transform: translate(0%,0%);  width:100%" data-700p="opacity:1; transform: translate(0%,-100%);  width:100%">
-
-	<div class="full-black" data-550p="opacity:0" data-650p="opacity:0.5"></div>
-		
-		<div class="text-center feature-display-text" data-580p="top:50%; opacity:0" data-630p="top:40%; opacity:1">
-			
-	<h1>Cook smart, not hard</h1>
-	<p>Control your stovetop remotely using your mobile phone or tablet from anywhere within your home. 
-
-<br>Lesser physical effort makes it easy for elderly and physically handicapped to cook using Caspo</p>
-
-		</div>
-
-
-</div>
-
-
-
-
-<div id="scene-6" class="full-div image-display"  data-650p="opacity:1; transform: translate(0%,100%); width:100%" data-700p="opacity:1; transform: translate(0%,0%);  width:100%" data-750p="opacity:1; transform: translate(0%,0%);  width:100%" data-800p="opacity:1; transform: translate(0%,-100%);  width:100%">
-		
-		<div class="text-right feature-display-text black-text-color" data-580p="top:50%; opacity:0" data-630p="top:30%; opacity:1">
-			
-	<h1>Phone connected learning stovetop</h1>
-	<p>
-This Internet of Things stovetop couples with your phone or tablet. The software and hardware works 
-
-in synergy to learn your cooking habits and pattern and helps you to multitask smartly. Now you can 
-
-work on your office presentation without worrying about what is on your stovetop.</p>
-
-		</div>
-
-
-</div>
-
-
-
-
-<div id="scene-7" class="full-div image-display"  data-750p="opacity:1; transform: translate(0%,100%); width:100%" data-800p="opacity:1; transform: translate(0%,0%);  width:100%" data-850p="opacity:1; transform: translate(0%,0%);  width:100%" data-900p="opacity:1; transform: translate(0%,-100%);  width:100%">
-
-	<div class="full-black" data-750p="opacity:0" data-850p="opacity:0.5"></div>
-		
-		<div class="text-center feature-display-text" data-780p="top:50%; opacity:0" data-830p="top:40%; opacity:1">
-			
-	<h1>Caspo Wellness Wizard</h1>
-	<p>A Single personalized wizard that acts a concierge for food, health and everything related to cooking. 
-<br>
-Wellness wizard actively helps to improve the Caspo family health Index</p>
-
-		</div>
-
-
-</div>
-
-
-
-<div id="scene-8" class="full-div image-display"  data-850p="opacity:1; transform: translate(0%,100%); width:100%" data-900p="opacity:1; transform: translate(0%,0%);  width:100%">
-	
-	<div id="end-scene-types">
-		<h1>Our Products</h1>
- 
-<div id="more-product">
-	
-	<div class="mproduct-info-box">
-			
-			<div class="info">
-				<img src="imgs/sp1.png" style="max-width:100%" />
+			<div class="col-md-12 container text-center center-block" id="headline-texts">
+				<h1>Now can be coupled with your phone</h1>
+				<h4>Control the stovetop remotely with your phone.</h4>
 			</div>
-<h3>Caspo Restaurant</h3>
 	</div>
+	<div class="content-page">
+		<div class="full-div" id="scene2">
+			<div class="sub-side-text right-c col-sm-4" id="s2SideText">
+				<h1>Make cooking gas when you want</h1>
+				<p>Dont worry about cooking gas! Make gas on demand from water and electricity at same cost as LPG and cook with it!</p>
+				<div class="row feat-icons">
+					<div class="col-sm-4"><img src="imgs/blub-icon.gif"></img>Control other smart devices using Caspo app</div>
+					<div class="col-sm-4"><img src="imgs/search-icon.gif"></img>Learns from your cooking habits</div>
+					<div class="col-sm-4"><img src="imgs/phone-icon.gif"></img>Perfectly Synced with your smart gadget</div>
+					
+				</div>
+			</div>
+		</div>
 
-		<div class="mproduct-info-box">
-		
 
-			<div class="info">
+
+
+
+		<div class="full-div" id="scene3">
+			<div class="img-slider">
+				<li id="s3s1"><article><h1>Multitask away!</h1><p>Worry about your offrice presentation, your food will not be overcooked!The software and hardware works in synergy to learn your cooking habits and pattern. </p></article></li>
+				<li id="s3s2"><article><h1>Cook smart, not hard!</h1><p>Now control your stovetop remotely. Lesser physical effort means easier cooking for elderly and physically challenged</p></article></li>
+				<li id="s3s3"><article><h1>We take care of your family!</h1><p>We track the Caspo health index of each member of your family and gives you personalized suggestions.</p></article></li>
+			</div>
+			
+http://www.caspoenergy.com/beta/single-page.html			
+		</div>
+
+
+		<div class="clear"></div>
+
+
+		<div class="full-div" id="scene4">
+			<div class="row">
+				<div class="container">
+					<a href="./caspo-green.html" class="col-md-4 product-div">
+						<h1>Caspo Green</h1>
+						<img src="imgs/caspo-lsb-block.png" />
+						<div class="clear"></div>
+						<ul>
+							<li>End-to-end green solution</li>
+							<li>Solar power and low pressure storage based cooking</li>
+							<li>More features</li>
+						</ul>
+
+						<button>More Info</button>
+					</a>
+					<a href="./caspo-main.html" class="col-md-4 product-div">
+						<h1>Caspo Smarts</h1>
+						<img src="imgs/caspo-home-block.png" />
+						<div class="clear"></div>
+						<ul>
+							<li>LPG-On demand gas hybrid</li>
+							<li>Three burner stovetop</li>
+							<li>More features</li>
+						</ul>
+
+						<button>More info</button>
+					</a>
+					<a href="./caspo-chef.html" class="col-md-4 product-div">
+						<h1>Caspo Chef</h1>
+						<img src="imgs/caspo-smb-block.png" />
+						<div class="clear"></div>
+						<ul>
+							<li>Enterprise solutions</li>
+							<li>High power savings generator</li>
+							<li>More features</li>
+						</ul>
+
+						<button>More info</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+<div class="clear"></div>
+
+
+		<div class="full-div" id="scene5">
+
+			<div class="row">
+			<div class="col-lg-12">
 				
-				<img src="imgs/sp2.jpg" style="max-width:100%" />
-			</div>
-	<h3>Caspo Solar</h3>
-	</div>
+					<h1>Team</h1>
+					<p>The people behind.</p>
 
-		<div class="mproduct-info-box">
+					<div class="row">
+
+						<div class="center-margins">
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/vimal gopal.jpg" /><h3>Vimal</h3><p>CEO</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/nithin mohan.jpg" /><h3>Nithin</h3><p>CBDO & CMO</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/vijeesh tv.jpg" /><h3>VIJEESH</h3><p>CDO</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/riswin mh.jpg" /><h3>RISWIN</h3><p>CTO</p></div>
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="center-margins">
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/praveen sridhar.jpg" /><h3>PRAVEEN</h3><p>CO-CTO</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/nabeel km.jpg" /><h3>NABEEL</h3><p>DESIGN MECH</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/sanoj sen.jpg" /><h3>SANOJ</h3><p>DESIGN MECH</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/thaher majeed.jpg" /><h3>THAHER</h3><p>PLATFORM DEV</p></div>
+						</div>
+
+					</div>
+
+
+
+					<div class="row">
+
+						<div class="center-margins">
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/kanika saluja.jpg" /><h3>KANIKA</h3><p>FINANCE ANALYST</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/padmanabhan.jpg" /><h3>PADMANABHAN</h3><p>EMBEDDED ARCH</p></div>
+							<div class="team-members-list"><img class="img-circle team-mem-dp" src="imgs/founders/vinayan hari.jpg" /><h3>VINAYAN</h3><p>N/W ANALYST</p></div>
+							
+						</div>
+
+					<div class="row">
+						<h1>Chairman & Mentor</h1>
+						
+					</div>
+
+					<div class="row">
+						<div class="center-margins">
+							<div class="team-members-list" style="margin-right:0"><img class="img-circle team-mem-dp" src="imgs/founders/Mehul desai.jpg" /><h3>MEHUL</h3></div>
+						</div>
+						
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+
 			
-
-			<div class="info">
-				<img src="imgs/sp3.jpg" style="max-width:100%" />
 			</div>
-<h3>Caspo Home</h3>
-	</div>
-	
-
-
-</div>
-
-	</div>
-	<div id="end-scene-pre-order">
-		
-		<h1>Pre-order now!</h1>
-		<a class="button-order">Mail us at contact@caspoenergy.com</a>
-
-	</div>
-	<!--<footer>
-		
-		<div class="footer-left-links">
-			
-			<a href="#">Contact : </a>  
 
 		</div>
+		</div>
+<div class="clear"></div>
+		<div class="full-div validation-form-home">
 
-
-	</footer> -->
-
-
+			<div class="row">
+				<h2>Get Notified.</h2>
+				<p>Push in your email and be the first to know when it's released</p>
+				 
+			
+			<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="//caspoenergy.us11.list-manage.com/subscribe/post?u=a3de5825e5d3f1ac1e10b36a6&amp;id=df22f19834" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<input type="email" class="input-regular" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a3de5825e5d3f1ac1e10b36a6_df22f19834" tabindex="-1" value=""></div>
+    <div class="clear">
+<!--     	<input type="submit" class="input-regular" placeholder="Enter your email address" id="mc-embedded-subscribe"></input>
+ -->
+    	<input type="submit" class="input-regular" value="Get Updated" name="subscribe" id="mc-embedded-subscribe"></div>
+    </div>
+</form>
 </div>
 
+<!--End mc_embed_signup-->
+			</div>
+		</div>
+
+<div class="clear"></div>
+		<footer id="contactusfooter">
+				<div class="col-sm-4">
+					<h2>Caspo LLC</h2>
+					<p>
+					824 Saints Stephens Green, Oak Brook</br>
+					Illinois 60523</br>
+					
+
+					</p>
+				</div>
+
+				<div class="col-sm-4">
+
+					<h2>Get to us at</h2>
+					<p>
+					Email : contact@caspoenergy.com</br>
+					Call us at +91 828 138 2307
+					</p>
+					
+				</div>
+
+				<div class="col-sm-4">
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:140px;width:329px;'><div id='gmap_canvas' style='height:200px;width:329px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.maps-generator.com/'>Next</a> <script type='text/javascript' src='http://embedmaps.com/google-maps-authorization/script.js?id=71758bb3bb356497ab8c082c1fbae37f6312f11e'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(10.0535175,76.35576930000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(10.0535175,76.35576930000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Caspo Energy</strong><br>AGS Gold & Diamond Park, NAD Rd HMT Colony, North Kalamassery Kochi, Kerala 683503<br>683503 Kochi<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+
+
+		</footer>
+
+
+	</div>
+
+	<script type="text/javascript">
 
 
 
-
-
-
-
-
-
-<div id="light-sweep"
-	data-0="transform: translate(-100%,0)" data-100p="transform: translate(-100%,0)" data-120p="transform: translate(100%,0)"  data-293p="transform: translate(-100%,0)" data-307p="transform: translate(100%,0)"></div>
-	
-	
-	
-	</div><!--Page-->
+	</script>
 </body>
-
-<script type="text/javascript">
-	skrollr.init({
-	
-		scale: 0.2,
-		forceHeight: true,
-		smoothScrolling: true
-	});
-	
-	
-	/*
-	window.onload = function() {
-	
-	var body = $("body, html");
-var top = body.scrollTop() // Get position of the body
-if(top!=0)
-{
-	   //window.scrollBy(0, 5000);
-	   
-	   $('html, body').animate({
-    scrollTop: '+=6000'
- }, 4000);
-}
-
-}
-*/
-
-</script>
-
-
-
-
-<script type="text/javascript">
-
-/*
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    show('page', true);
-    show('loading', false);
-	
-});
-*/
-
-$( document ).ready(function() {
-    $("#page").css("display", "block");
-	$("#loading").css("display", "none");
-	
-	
-	
-	
-	
-	$('html, body').delay(1200).animate({
-    scrollTop: '+=6500'
- }, 4000,
-	function() {
-	$(this).delay(1200).animate({
-    scrollTop: '+=2800'
- }, 3000)
-	}
- 
- );
- 
- 
-  });
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,documeant,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-65408450-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </html>
