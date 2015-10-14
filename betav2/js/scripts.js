@@ -2,6 +2,14 @@ $(document).ready(function() {
 
 	/***************** Waypoints ******************/
 
+	$('.pre-order-btn-intro').click(function() {
+		$(this).hide();
+		$('#mc_embed_signup').show();
+	});
+
+	
+
+
 	$('.wp1').waypoint(function() {
 		$('.wp1').addClass('animated fadeInUp');
 	}, {
@@ -17,6 +25,7 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
+
 
 	/***************** Initiate Flexslider ******************/
 	$('.flexslider').flexslider({
@@ -53,8 +62,11 @@ $(document).ready(function() {
 
 	/***************** Header BG Scroll ******************/
 
+
+
 	$(function() {
 		$(window).scroll(function() {
+			
 			var scroll = $(window).scrollTop();
 
 			if (scroll >= 20) {
@@ -86,6 +98,9 @@ $(document).ready(function() {
 	});
 	/***************** Smooth Scrolling ******************/
 
+
+	
+
 	$(function() {
 
 		$('a[href*=#]:not([href=#])').click(function() {
@@ -105,10 +120,6 @@ $(document).ready(function() {
 	});
 
 
-
-	$('.pre-order-btn-intro').click(function() {
-		$(this).hide();
-		$('#mc_embed_signup').show();
-	});
+	
 
 });

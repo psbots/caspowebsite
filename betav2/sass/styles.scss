@@ -43,6 +43,14 @@ body {
   -webkit-text-size-adjust: 100%;
   //fix for iOS
 }
+
+
+#top {
+  
+  min-height:3000px;
+}
+
+
 ul, ol {
   margin: 0;
   padding: 0;
@@ -243,7 +251,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero.jpg') center center;
+  background: url('../imgs/kitchen.8.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -722,6 +730,7 @@ Sign up form
   padding: 15px;
   width: 350px;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .signup-intro {
@@ -895,6 +904,12 @@ footer {
     a {
 
       margin-right:10px;
+
+    }
+
+    a:hover {
+
+      
 
     }
 
