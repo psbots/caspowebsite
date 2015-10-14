@@ -342,7 +342,7 @@ Hero
 
 header {
   padding: 50px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  border-bottom: solid 0px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
   margin: 0 auto;
@@ -631,7 +631,7 @@ Features-stack
 Sign up form
 ========================================================================== */
 .sign-up .signup-form .sign-up-btn {
-  padding: 15px 0;
+  padding: 30px 0;
   border-radius: 3px;
   width: 80%;
   font-size: 13px; }
@@ -685,6 +685,17 @@ Sign up form
     color: #BCC1C3; }
   .sign-up .signup-form .form-input-group input:-ms-input-placeholder {
     color: #BCC1C3; }
+
+.input-regular {
+  padding: 15px;
+  width: 350px;
+  margin-right: 15px; }
+
+.signup-intro {
+  padding: 15px 40px; }
+
+#mc_embed_signup {
+  display: none; }
 
 /* ==========================================================================
 To top
@@ -784,6 +795,26 @@ footer {
       margin-top: 20px; }
   footer .footer-links {
     margin: 120px 0 120px 0; }
+
+.footer-credits {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 30px;
+  width: 100%; }
+  .footer-credits .footer-credits--contents {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #000; }
+  .footer-credits .footer-credits--contents a {
+    color: #fff;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 0px solid #000; }
+  .footer-credits .footer-credits--social--icons {
+    font-size: 18px; }
+    .footer-credits .footer-credits--social--icons a {
+      margin-right: 10px; }
 
 /* ==========================================================================
 Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
