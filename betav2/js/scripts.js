@@ -47,6 +47,10 @@ $(document).ready(function() {
 
 	});
 
+	
+
+
+
 	/***************** Header BG Scroll ******************/
 
 	$(function() {
@@ -98,6 +102,13 @@ $(document).ready(function() {
 			}
 		});
 
+	});
+
+
+
+	$('.pre-order-btn-intro').click(function() {
+		$(this).hide();
+		$('#mc_embed_signup').show();
 	});
 
 });
