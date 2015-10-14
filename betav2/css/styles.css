@@ -317,7 +317,8 @@ Hero
   background-size: cover;
   background-color: #ccc;
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  text-shadow: 1px 1px 1px #000; }
   .hero .down-arrow a {
     color: #fff; }
   .hero h1 {
@@ -330,6 +331,14 @@ Hero
     margin-bottom: 80px; }
   .hero .hero-content {
     padding-top: 26%; }
+
+.single-page--hero--electric {
+  background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg"); }
 
 .navigation {
   transition: all 300ms ease-in-out;
@@ -491,6 +500,23 @@ Features-stack
     top: 114px;
     z-index: 4;
     left: 50%; }
+
+/* ==========================================================================
+.Design
+========================================================================== */
+.paralllex--design-1 {
+  height: 350px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg"); }
+  .paralllex--design-1 h3 {
+    color: #fff; }
+  .paralllex--design-1 p {
+    color: #fff; }
 
 /* ==========================================================================
 .hero-strip
