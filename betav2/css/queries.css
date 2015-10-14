@@ -236,6 +236,20 @@
 	}
 
 	@media screen and (max-width:640px) {
+
+		.footer-credits--social--icons {
+
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+
+		}
+
+		.footer-credits--contents {
+			text-align: center;
+		}
+
+
 		footer ul.footer-group {
 			border-top: none;
 		}
@@ -259,6 +273,11 @@
 	}
 
 	@media screen and (max-width:480px) {
+
+
+
+		
+
 		.hero .hero-content {
 			padding-top: 41%;
 		}
