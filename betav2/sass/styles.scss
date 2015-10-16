@@ -23,6 +23,32 @@ Global Styles
 .no-margin {
   margin: 0;
 }
+
+.margin--header {
+  margin-top:170px;
+}
+
+.full-window-height {
+  
+  height:100vh;
+}
+
+.full-height-center {
+  
+  margin-top:40vh;
+}
+
+.no-shadow {
+  
+  text-shadow: 0 0 !important;
+}
+
+.blue-bg {
+  
+  background: #232422 !important;
+  color: #fff;
+}
+
 a {
   color: $accent-color;
   -webkit-transition-timing-function: ease;
@@ -48,6 +74,12 @@ body {
 #top {
   
   min-height:3000px;
+}
+
+
+#single-while-bg {
+  
+
 }
 
 
@@ -253,15 +285,15 @@ Hero
 
 .hero {
   min-height: 750px;
-  background: url('../imgs/kitchen.8.jpg') center center;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color:#ccc;
+  
   position: relative;
   height:100vh;
-  text-shadow:1px 1px 1px #000;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.4);
   .down-arrow a {
     color: $txt-light;
   }
@@ -384,6 +416,35 @@ header {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+.addition-nav {
+  
+  width:100%;
+  
+  padding:10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow:none;
+  color:#000;
+
+  .a-nav--container {
+
+    width: 90%;
+
+    margin:0 auto;
+    text-align: right;
+
+    a {
+
+    color:#fff;
+    margin-right: 30px;
+
+    }
+
+  }
+
+
 }
 
 /* ==========================================================================
@@ -513,11 +574,94 @@ Features-stack
 ========================================================================== */
 
 
+
+.full-height-section {
+  
+  height: 70vh !important;
+}
+
+
+
+
+
+.parallex--design-3 {
+  
+
+
+  background-image: linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/Runner_bannerimage.jpg") !important;
+
+  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/Runner_bannerimage.jpg") !important;
+
+  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/Runner_bannerimage.jpg") !important;
+
+  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/Runner_bannerimage.jpg") !important;
+
+  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/Runner_bannerimage.jpg") !important;
+
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/Runner_bannerimage.jpg") !important;
+
+  background-size: cover;
+
+
+}
+
+
+.parallex--design-2 {
+  
+
+
+  background-image: linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/orzo-ingredients.jpg") !important;
+
+  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/orzo-ingredients.jpg") !important;
+
+  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/orzo-ingredients.jpg") !important;
+
+  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/orzo-ingredients.jpg") !important;
+
+  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/orzo-ingredients.jpg") !important;
+
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/orzo-ingredients.jpg") !important;
+
+  background-size: cover;
+
+
+}
+
+
+.parallax--box {
+ height: 350px;
+
+  text-align: center;
+
+  padding-top: 50px;
+
+
+
+
+
+  h3 {
+
+    color:#fff;
+
+  }
+
+  p {
+
+    color:#fff
+
+  }
+
+}
+
+
 .paralllex--design-1 {
   
   height: 350px;
 
   text-align: center;
+
+  padding-top: 50px;
+
 
   background-image: linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
 
@@ -530,6 +674,8 @@ Features-stack
   background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
 
   background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+
+
 
   h3 {
 
@@ -844,6 +990,51 @@ To top
 /* ==========================================================================
 Footer
 ========================================================================== */
+
+
+
+.main-footer {
+    
+    padding: 20px;
+
+    background-color: $footer-primary;
+
+    .footer-credits--contents {
+    
+    width:90%;
+    margin:0 auto;
+    font-size:13px;
+    color:#000
+    }
+
+
+  .footer-credits--contents a {
+    color:#fff;
+    margin-right:15px;
+    padding-right:15px;
+    border-right: 0px solid #000;
+  }
+
+  .footer-credits--social--icons {
+
+    font-size:18px;
+
+    a {
+
+      margin-right:10px;
+
+    }
+
+    a:hover {
+
+      
+
+    }
+
+  }
+
+}
+
 footer {
   background-color: $footer-primary;
   position: relative;
@@ -981,6 +1172,131 @@ footer {
   }
 
 }
+
+
+
+
+/* ===============
+
+Mobile UI app display
+
+===========*/
+
+
+.app-ui-details {
+  
+  margin-top:100px;
+  text-align: center;
+
+}
+
+.mobile-ui--view {
+  
+
+
+
+}
+
+.mockup-nexus-a {
+  
+  background: url(../imgs/nexus6-mocku.png);
+  background-size:cover;
+  height: 500px;
+  width: 257px;
+  margin:0 auto;
+  padding: 40px 10px 28px;
+
+  .mockup-nexus--display {
+    max-width:100%;
+    min-height: 100%;
+    background:#ccc;
+
+  }
+
+  #mobile-ui--slideshow {
+
+      height: 432px;
+      position:relative;
+
+      img {
+
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: 8;
+      }
+
+      img.active {
+
+        z-index:10;
+
+      }
+
+      img.last-active {
+        z-index:9;
+      }
+
+  }
+
+
+
+
+    
+
+
+
+
+}
+
+
+#mobile-ui--slideshow--desc {
+
+      height: 432px;
+      position:relative;
+
+      li {
+
+        position:absolute;
+        top: 0;
+        left: 0;
+        opacity:0 !important;
+        z-index: 8;
+        transition: all 1s;
+      }
+
+      li.active {
+
+        z-index:10;
+        opacity:1 !important; 
+
+      }
+
+      li.last-active {
+        z-index:9;
+         opacity:0 !important;
+      }
+
+  }
+
+
+
+
+
+    
+
+  .contact--map {
+
+
+  
+  }
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
 Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
@@ -1326,3 +1642,15 @@ you can use the generic selector below, but it's slower:
 .icon-dribbble:before {
   content: "\e063";
 }
+
+
+
+
+
+
+
+
+
+
+
+
