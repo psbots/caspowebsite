@@ -5,7 +5,7 @@
 .btn {
 	font-size: 13px;
 	border: solid 2px;
-	@include border-radius(40px);
+	@include border-radius(0px);
 	display: inline-block;
 	text-transform: uppercase;
 }

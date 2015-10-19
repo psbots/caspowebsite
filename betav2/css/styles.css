@@ -35,16 +35,16 @@ h5 {
 .btn {
   font-size: 13px;
   border: solid 2px;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
   display: inline-block;
   text-transform: uppercase; }
 
 .btn:hover, .btn:focus {
   color: #fff;
-  border-color: #FF5274;
-  background-color: #FF5274; }
+  border-color: #337AB7;
+  background-color: #337AB7; }
 
 .btn-white {
   font-size: 13px;
@@ -56,23 +56,23 @@ h5 {
   border-color: #fff; }
 
 .btn-white:hover, .btn-white:focus {
-  color: #FF5274;
-  border-color: #FF5274; }
+  color: #337AB7;
+  border-color: #337AB7; }
 
 .btn-fill {
   color: #fff;
-  border: solid 2px #FF5274;
+  border: solid 2px #337AB7;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #FF5274; }
+  background-color: #337AB7; }
 
 .btn-fill:hover, .btn-fill:focus {
   color: #fff;
-  background-color: #D7405D;
-  border-color: #D7405D; }
+  background-color: #3386B7;
+  border-color: #3386B7; }
 
 .btn-small {
   padding: 8px 40px; }
@@ -103,8 +103,14 @@ Global Styles
 .no-margin {
   margin: 0; }
 
+.bottom-margin-2 {
+  margin-bottom: 60px; }
+
 .margin--header {
   margin-top: 170px; }
+
+.auto-height {
+  height: auto !important; }
 
 .full-window-height {
   height: 100vh; }
@@ -120,7 +126,7 @@ Global Styles
   color: #fff; }
 
 a {
-  color: #FF5274;
+  color: #337AB7;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
@@ -129,7 +135,7 @@ a {
   transition-property: color, border-color, background-color; }
 
 a:hover, a:focus {
-  color: #D7405D;
+  color: #3386B7;
   text-decoration: none; }
 
 body {
@@ -346,6 +352,15 @@ Hero
   .hero .hero-content {
     padding-top: 26%; }
 
+.main-landing-page--img {
+  background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+  background-size: cover; }
+
 .single-page--hero--electric {
   background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
   background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
@@ -390,7 +405,7 @@ header {
         color: #fff;
         padding-right: 25px; }
         header ul.primary-nav li a:hover {
-          color: #FF5274; }
+          color: #337AB7; }
       header ul.primary-nav li:last-child a {
         padding-right: 0px; }
   header ul.member-actions li {
@@ -398,7 +413,7 @@ header {
     header ul.member-actions li a {
       color: #fff; }
       header ul.member-actions li a:hover {
-        color: #FF5274; }
+        color: #337AB7; }
   header .header-nav {
     display: inline-block; }
   header .member-actions {
@@ -434,7 +449,7 @@ Intro
 ========================================================================== */
 .intro span.icon {
   font-size: 40px;
-  color: #FF5274;
+  color: #337AB7;
   font-weight: bold; }
 
 .intro-icon {
@@ -460,7 +475,7 @@ Features-stack
     margin: 0 0 20px 0; }
   .features span.icon {
     font-size: 35px;
-    color: #FF5274;
+    color: #337AB7;
     font-weight: bold; }
   .features .feature-icon {
     display: inline-block;
@@ -528,6 +543,14 @@ Features-stack
     top: 114px;
     z-index: 4;
     left: 50%; }
+  .features-extra .caspo-d1-wrap {
+    position: absolute;
+    width: 916px;
+    height: 540px;
+    background: url("../img/macbook-pro.png") no-repeat center center;
+    top: 114px;
+    z-index: 4;
+    left: -10%; }
 
 /* ==========================================================================
 .Design
@@ -571,7 +594,8 @@ Features-stack
   background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
   background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
   background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg"); }
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+  background-size: cover; }
   .paralllex--design-1 h3 {
     color: #fff; }
   .paralllex--design-1 p {
@@ -734,7 +758,7 @@ Sign up form
   text-align: left;
   position: relative; }
   .sign-up .signup-form .form-input-group i {
-    color: #FF5274;
+    color: #337AB7;
     font-size: 14px; }
   .sign-up .signup-form .form-input-group i:after {
     content: "";
@@ -842,7 +866,7 @@ footer {
   footer a {
     color: #fff; }
   footer a:hover {
-    color: #FF5274; }
+    color: #337AB7; }
   footer ul.footer-group {
     border-top: solid 1px #4E566C;
     padding-top: 25px;
@@ -853,7 +877,7 @@ footer {
     font-size: 13px;
     text-transform: uppercase; }
   footer ul.footer-group li a:hover {
-    color: #FF5274; }
+    color: #337AB7; }
   footer ul.footer-group li {
     margin-right: 30px; }
   footer ul.footer-group li:last-child {
@@ -928,8 +952,12 @@ footer {
 Mobile UI app display
 
 ===========*/
+.app-intro {
+  margin-bottom: 70px; }
+
 .app-ui-details {
   margin-top: 100px;
+  margin-bottom: 100px;
   text-align: center; }
 
 .mockup-nexus-a {
@@ -957,7 +985,7 @@ Mobile UI app display
       z-index: 9; }
 
 #mobile-ui--slideshow--desc {
-  height: 432px;
+  height: 202px;
   position: relative; }
   #mobile-ui--slideshow--desc li {
     position: absolute;
@@ -972,6 +1000,10 @@ Mobile UI app display
   #mobile-ui--slideshow--desc li.last-active {
     z-index: 9;
     opacity: 0 !important; }
+
+.cooktop-mockup--front-display {
+  margin-top: 30px;
+  margin-bottom: 45px; }
 
 /* ==========================================================================
 Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
