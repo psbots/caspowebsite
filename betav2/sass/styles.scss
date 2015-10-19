@@ -24,8 +24,19 @@ Global Styles
   margin: 0;
 }
 
+
+.bottom-margin-2 {
+  
+  margin-bottom: 60px;
+}
+
 .margin--header {
   margin-top:170px;
+}
+
+.auto-height {
+  
+  height: auto !important;
 }
 
 .full-window-height {
@@ -313,6 +324,25 @@ Hero
 }
 
 
+.main-landing-page--img {
+ 
+
+     background-image: linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+
+    background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+
+    background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+
+    background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+
+    background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+
+    background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+
+    background-size:cover;
+}
+
+
 
 
 
@@ -565,6 +595,18 @@ Features-stack
     z-index: 4;
     left: 50%;
   }
+
+    .caspo-d1-wrap {
+    position: absolute;
+    width: 916px;
+    height: 540px;
+    background: url("../img/macbook-pro.png") no-repeat center center;
+    top: 114px;
+    z-index: 4;
+    left: -10%;
+  }
+
+
 }
 
 
@@ -674,6 +716,8 @@ Features-stack
   background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
 
   background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
+
+  background-size: cover;
 
 
 
@@ -1183,9 +1227,15 @@ Mobile UI app display
 ===========*/
 
 
+.app-intro {
+  
+  margin-bottom: 70px;
+}
+
 .app-ui-details {
   
   margin-top:100px;
+  margin-bottom: 100px;
   text-align: center;
 
 }
@@ -1251,7 +1301,7 @@ Mobile UI app display
 
 #mobile-ui--slideshow--desc {
 
-      height: 432px;
+      height: 202px;
       position:relative;
 
       li {
@@ -1290,6 +1340,15 @@ Mobile UI app display
   
   }
 
+
+
+
+.cooktop-mockup--front-display {
+  
+  margin-top: 30px;
+  margin-bottom: 45px;
+
+}
 
 
 
