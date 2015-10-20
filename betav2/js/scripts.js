@@ -69,11 +69,12 @@ $(document).ready(function() {
 			
 			var scroll = $(window).scrollTop();
 
-			if (scroll >= 20) {
+			if (scroll >= 30) {
 				$('section.navigation').addClass('fixed');
 				$('header').css({
 					"border-bottom": "none",
-					"padding": "35px 0"
+					"padding": "35px 0",
+					"display": "none"
 				});
 				$('header .member-actions').css({
 					"top": "26px",
@@ -85,7 +86,8 @@ $(document).ready(function() {
 				$('section.navigation').removeClass('fixed');
 				$('header').css({
 					"border-bottom": "solid 0px rgba(255, 255, 255, 0.2)",
-					"padding": "50px 0"
+					"padding": "50px 0",
+					"display": "block"
 				});
 				$('header .member-actions').css({
 					"top": "41px",

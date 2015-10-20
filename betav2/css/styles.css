@@ -103,6 +103,9 @@ Global Styles
 .no-margin {
   margin: 0; }
 
+.no-overflow {
+  overflow: hidden; }
+
 .bottom-margin-2 {
   margin-bottom: 60px; }
 
@@ -359,7 +362,9 @@ Hero
   background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
   background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
   background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 58% -125px; }
 
 .single-page--hero--electric {
   background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
@@ -395,7 +400,8 @@ header {
     header a.login {
       margin-right: 20px; }
   header .logo {
-    display: inline-block; }
+    display: inline-block;
+    max-width: 30%; }
   header ul.primary-nav {
     margin: 0 0 0 75px;
     padding: 0; }
@@ -550,7 +556,19 @@ Features-stack
     background: url("../img/macbook-pro.png") no-repeat center center;
     top: 114px;
     z-index: 4;
-    left: -10%; }
+    right: 50%; }
+  .features-extra .phone-doc--pic {
+    background: url("../imgs/renders/kitchen-new-2-26.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 0 -200px; }
+  .features-extra .timer-nob--pic {
+    background: url("../imgs/renders/red.243.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 0 -200px; }
+  .features-extra .design--pic {
+    background: url("../imgs/renders/red.244.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 0 -200px; }
 
 /* ==========================================================================
 .Design

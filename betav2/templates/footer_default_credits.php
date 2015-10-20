@@ -4,7 +4,7 @@ Footer Credits Deafult
 **************************/
  ?>
 
-         <div class="footer-credits">
+         
             <div class="footer-credits--contents">
                 <a href="#">ABOUT</a> <a href="#">CARRIER</a>  <a href="#">CONTACT</a> CASPO @ 2015
 
