@@ -12,7 +12,7 @@ Default Menu
 
 			<header>
                 <div class="header-content">
-                    <div class="logo"><a href="#"><img src="imgs/caspo-logo.png" width="100px" alt="Caspo logo"></a></div>
+                    <div class="logo"><a href="index.php"><img src="imgs/caspo-logo.png" width="100px" alt="Caspo logo"></a></div>
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
@@ -24,7 +24,7 @@ Default Menu
                             </ul>
                             <ul class="member-actions">
                                 <li><a href="https://caspoenergy.wordpress.com/" class="login">Blog</a></li>
-                                <li><a href="appshow.php" class="btn-white btn-small">Download the app</a></li>
+                                <li><a href="appshow.php" class="btn btn-white btn-small">Download the app</a></li>
                             </ul>
                         </nav>
                     </div>
