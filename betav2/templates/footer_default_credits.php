@@ -4,9 +4,9 @@ Footer Credits Deafult
 **************************/
  ?>
 
-         <div class="footer-credits">
+         
             <div class="footer-credits--contents">
-                <a href="#">ABOUT</a> <a href="#">CARRIER</a>  <a href="#">CONTACT</a> CASPO @ 2015
+                <a href="about.php">ABOUT</a> <a href="careers.php">CAREERS</a>  <a href="contact.php">CONTACT</a> <a href="index.php">CASPO @ 2015</a>
 
                 <div class="pull-right footer-credits--social--icons social-share">
                     <a href="https://www.facebook.com/caspoenergy?fref=ts" class="fa fa-facebook-official facebook-share"></a>
