@@ -12,33 +12,13 @@
 
     <section class="hero main-full-window single-page--hero--electric">
         <section class="navigation">
-            <header>
-                <div class="header-content">
-                    <div class="logo"><a href="#"><img src="imgs/caspo-logo.png" width="100px"  alt="Caspo logo"></a></div>
-                    <div class="header-nav">
-                        <nav>
-                            <ul class="primary-nav">
-                                <li><a href="#features">Electric</a></li>
-                                <li><a href="#assets">Green</a></li>
-                                <li><a href="#blog">Enterprise</a></li>
-                                <li><a href="#download">Industrial</a></li>
-                            </ul>
-                            <ul class="member-actions">
-                                <li><a href="#download" class="login">Blog</a></li>
-                                <li><a href="#download" class="btn-white btn-small">Download the app</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="navicon">
-                        <a class="nav-toggle" href="#"><span></span></a>
-                    </div>
+           <?php
 
+            //menu-elements
 
+            include('templates/menu_default.php');
 
-                </div>
-
-
-            </header>
+            ?>
 
              <div class="addition-nav">
 
@@ -359,16 +339,13 @@
 
     <div class="clear"></div>
         <div class="main-footer">
-            <div class="footer-credits--contents">
-                <a href="#">TEAM</a> <a href="#">CARRIER</a>  <a href="#">LEGAL</a> CASPO @ 2015
+                    <?php
 
-                <div class="pull-right footer-credits--social--icons social-share">
-                    <a href="https://www.facebook.com/caspoenergy?fref=ts" class="fa fa-facebook-official facebook-share"></a>
-                    <a href="https://twitter.com/caspoenergy" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
-                    <a href="#" class="fa fa-pinterest"></a>
-                </div>
-            </div> 
+            //menu-elements 
+
+            include('templates/footer_default_credits.php');
+
+        ?> 
         </div>
 
 
@@ -429,16 +406,14 @@
 
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/retina.js/dist/retina.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/classie/classie.js"></script>
-    <script src="js/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    
+
+        <?php
+
+            //menu-elements
+
+            include('templates/footer_scripts.php');
+
+        ?>
+
 </body>
 </html>

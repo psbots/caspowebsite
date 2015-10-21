@@ -10,7 +10,7 @@
 <body id="single-while-bg">
 
     <section class="hero auto-height">
-        <section class="navigation fixed">
+        <section class="navigation fixed std-fixed">
                       <?php
 
             //menu-elements
