@@ -118,6 +118,9 @@ Global Styles
 .full-window-height {
   height: 100vh; }
 
+.text--link--black a {
+  color: #000; }
+
 .full-height-center {
   margin-top: 40vh; }
 
@@ -393,7 +396,7 @@ Hero
 
 .fixed {
   position: fixed;
-  background-color: #232731;
+  /*background-color: #232731;*/
   z-index: 999;
   width: 100%; }
 
@@ -409,7 +412,7 @@ header {
   position: relative;
   width: 1170px;
   margin: 0 auto;
-  transition: padding 300ms ease-in-out; }
+  transition: all 300ms ease-in-out; }
   header a {
     color: #fff;
     text-transform: uppercase;
@@ -973,7 +976,7 @@ footer {
     font-size: 13px;
     color: #000; }
   .footer-credits .footer-credits--contents a {
-    color: #fff;
+    color: #000;
     margin-right: 15px;
     padding-right: 15px;
     border-right: 0px solid #000; }

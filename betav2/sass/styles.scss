@@ -50,6 +50,15 @@ Global Styles
   height:100vh;
 }
 
+.text--link--black {
+  
+  a {
+
+    color:#000;
+
+  }
+}
+
 .full-height-center {
   
   margin-top:40vh;
@@ -398,9 +407,10 @@ Hero
   width: 100%;
   z-index: 999;
 }
+
 .fixed {
   position: fixed;
-  background-color: #232731;
+  /*background-color: #232731;*/
   z-index: 999;
   width: 100%;
 }
@@ -412,13 +422,14 @@ Hero
   z-index: 999;
   width: 100%;
 }
+
 header {
   padding: 50px 0;
   border-bottom: solid 0px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
   margin: 0 auto;
-  transition: padding 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 
   a {
     color: $txt-light;
@@ -1266,7 +1277,7 @@ footer {
 
 
   .footer-credits--contents a {
-    color:#fff;
+    color:#000;
     margin-right:15px;
     padding-right:15px;
     border-right: 0px solid #000;
