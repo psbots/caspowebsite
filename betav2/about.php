@@ -4,6 +4,8 @@
     //include <head>
     include('templates/header.php');
 
+
+
 ?>
 
 <body id="single-while-bg">
@@ -29,7 +31,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-push-1">
                     <div class="hero-content text-center">
-                        <h1>smart connected cooktops are the future of cooking</h1>
+                        <h1 class="extra-bold-large">We believe</h1>
                         
                         
                     </div>

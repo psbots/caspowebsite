@@ -71,18 +71,6 @@
     </section>
 
 
-    <section class="parallax section-padding paralllex--design-1" id="new">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-push-3">
-                    <h3>Disgn ane namale mutte</h3>
-                    <p>Lorem ipsum dolor sit amet, no omnium tamquam posidonium ius, sale aperiri sadipscing nec ne, ei debitis dolorem mei.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
 
 
     <!--- Features -->

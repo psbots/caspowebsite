@@ -10,7 +10,7 @@
 <body id="single-while-bg">
 
     <section class="hero">
-        <section class="navigation fixed">
+        <section class="navigation fixed fixed-alltime">
               <?php
 
             //menu-elements
@@ -30,7 +30,7 @@
 
                     <div class="col-md-12 text-center margin--header no-shadow full-height-center">
 
-                        <h2 class="no-shadow">Careers</h2>
+                        <h2 class="extra-large">Careers</h2>
                         <h4>Choose a job you love, and you will never have to work a day in your life - Confucius</h4>
 
                         </br></br>
