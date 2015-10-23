@@ -103,6 +103,13 @@ Global Styles
 .no-margin {
   margin: 0; }
 
+.extra-bold-large {
+  font-size: 100px;
+  font-weight: 800; }
+
+.extra-large {
+  font-size: 80px; }
+
 .no-overflow {
   overflow: hidden; }
 
@@ -116,7 +123,7 @@ Global Styles
   height: auto !important; }
 
 .full-window-height {
-  height: 100vh; }
+  height: 94vh; }
 
 .text--link--black a {
   color: #000; }
@@ -337,7 +344,7 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 700px;
+  min-height: 600px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -359,15 +366,14 @@ Hero
     padding-top: 26%; }
 
 .main-landing-page--img {
-  background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
-  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
-  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
-  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
-  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/stove-kitchen-render.jpg");
+  background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.jpg");
+  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.jpg");
+  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerizedjpg");
+  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.jpg");
+  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 58% -125px; }
+  background-repeat: no-repeat; }
 
 .gas-landing-page--img {
   background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/Final.151.jpg");
@@ -381,12 +387,12 @@ Hero
   background-position: 58% -125px; }
 
 .single-page--hero--electric {
-  background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
-  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
-  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
-  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
-  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/kitchen.8.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.39.jpg");
+  background-image: -moz-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.39.jpg");
+  background-image: -o-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.39.jpg");
+  background-image: -ms-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.39.jpg");
+  background-image: -webkit-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.39.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(98, 135, 181, 0.58), rgba(0, 0, 0, 0.1)), url("../imgs/centerized.39.jpg"); }
 
 .navigation {
   transition: all 300ms ease-in-out;
@@ -397,6 +403,12 @@ Hero
 .fixed {
   position: fixed;
   /*background-color: #232731;*/
+  z-index: 999;
+  width: 100%; }
+
+.fixed-alltime {
+  position: fixed;
+  background-color: #232731;
   z-index: 999;
   width: 100%; }
 
@@ -578,9 +590,9 @@ Features-stack
     z-index: 4;
     right: 50%; }
   .features-extra .phone-doc--pic {
-    background: url("../imgs/renders/kitchen-new-2-26.jpg") no-repeat center center;
+    background: url("../imgs/renders/centerized.37.jpg") no-repeat center center;
     background-size: cover;
-    background-position: 0 -200px; }
+    background-position: 0 0px; }
   .features-extra .timer-nob--pic {
     background: url("../imgs/renders/red.243.jpg") no-repeat center center;
     background-size: cover;

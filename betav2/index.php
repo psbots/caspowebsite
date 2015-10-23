@@ -69,7 +69,7 @@
             </div>
         </div>
         
-         <div class="footer-credits">
+         <div class="footer-credits no-shadow">
                     <?php
 
             //menu-elements 
